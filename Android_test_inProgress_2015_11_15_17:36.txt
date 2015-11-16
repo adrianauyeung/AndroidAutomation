@@ -1,0 +1,31 @@
+F.
+======================================================================
+FAIL: test_menu_items (test_NavMenu_Android.TestMenuItemsCheck)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/adrianwork/Automation/AndroidAutomation/test_NavMenu_Android.py", line 53, in test_menu_items
+    self.assertEqual(appMenu, dbMenu)
+AssertionError: Lists differ: ['Dis[34 chars]e', 'My Favourites', 'Attendee', 'EventType Ca[45 chars]ame'] != ['Dis[34 chars]e', '21321My Favourites123123', 'Attendee', 'E[56 chars]ame']
+
+First differing element 3:
+My Favourites
+21321My Favourites123123
+
+  ['Discover Events',
+   'Schedule',
+   'Profile',
+-  'My Favourites',
++  '21321My Favourites123123',
+?   +++++             ++++++
+
+   'Attendee',
+   'EventType Category',
+   'EventCategory',
+   'Map',
+   'Social',
+   'Game']
+
+----------------------------------------------------------------------
+Ran 2 tests in 59.386s
+
+FAILED (failures=1)

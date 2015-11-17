@@ -37,7 +37,7 @@ class TestIntroScreen(unittest.TestCase):
         cursor = conn.cursor()
         cursor.execute("select * from intro where platform = 'ios' ORDER BY sort_order ASC")
         for row in cursor:
-            if row["type"] in ["plain", "login", "ibeacon"]:
+            if row["type"] in ["plain", "login"]:
                 # wait for screen elements to load
                 WebDriverWait(self.driver, 120).until(lambda findElem: self.driver.find_element_by_android_uiautomator( \
                     'new UiSelector().resourceId("com.eventbase.productsingle:id/title")'))

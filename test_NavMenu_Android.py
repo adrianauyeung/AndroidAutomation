@@ -51,7 +51,7 @@ class TestMenuItemsCheck(unittest.TestCase):
         appMenu = []
         for item in self.driver.find_elements_by_id("com.eventbase.productsingle:id/row_menudrawer_tab_name"):
             appMenu.append(item.text)
-            appMenu.remove("Diagnostics")
+        appMenu.remove("Diagnostics")
         self.assertEqual(appMenu, dbMenu)
 
     def tearDown(self):

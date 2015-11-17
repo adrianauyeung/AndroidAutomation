@@ -8,7 +8,7 @@ from appium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import urllib.request
 import sqlite3
-import sys
+from time import sleep
 
 # Returns abs path relative to this file and not cwd
 PATH = lambda p: os.path.abspath(

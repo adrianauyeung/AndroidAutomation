@@ -1,5 +1,5 @@
-#!/usr/local/Cellar/python3/3.5.0/Frameworks/Python.framework/Versions/3.5/bin/python3.5
-__author__ = 'adrian au-yeung'
+__author__ = 'Adrian Au-Yeung'
+# Updated Nov 16, 2015
 
 
 import os

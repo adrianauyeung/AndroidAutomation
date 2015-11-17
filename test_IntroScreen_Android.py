@@ -65,6 +65,9 @@ class TestIntroScreen(unittest.TestCase):
                         'new UiSelector().resourceId("com.eventbase.productsingle:id/action_negative")')
                     self.assertEqual(actionSkip.text, row["action_skip"])
 
+                # slow down for demo
+                sleep(8)
+
                 # click to next screen
                 if len(isActionNegPresent) > 0:
                     self.driver.find_element_by_android_uiautomator( \

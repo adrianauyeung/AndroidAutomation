@@ -54,6 +54,8 @@ class TestMenuItemsCheck(unittest.TestCase):
         appMenu.remove("Diagnostics")
         self.assertEqual(appMenu, dbMenu)
 
+        sleep(5)
+
     def tearDown(self):
         self.driver.quit()
 

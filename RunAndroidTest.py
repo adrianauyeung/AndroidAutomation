@@ -33,9 +33,6 @@ class AndroidTests():
 
 if __name__ == '__main__':
     androidTests = AndroidTests()
-    log_file = 'Android_test_inProgress_{}.txt'.format(now.strftime("%Y_%m_%d_%H:%M"))
-    f = open(log_file, "w")
-    runner = unittest.TextTestRunner(f)
-    unittest.main(defaultTest='androidTests.suite', testRunner=runner)
+    unittest.main(defaultTest='androidTests.suite', verbosity=2)
 
 

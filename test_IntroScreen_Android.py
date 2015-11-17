@@ -24,7 +24,7 @@ class TestIntroScreen(unittest.TestCase):
         desired_caps['platformName'] = 'Android'
         desired_caps['platformVersion'] = '5.1'
         desired_caps['deviceName'] = 'Android Emulator' # Android or Android Emulator
-        desired_caps['app'] = PATH('../../../Automation/AndroidAutomation/ProductSingle-global-debug.apk')
+        desired_caps['app'] = '/Users/adrianwork/Automation/AndroidAutomation/ProductSingle-global-debug.apk'
         desired_caps['appPackage'] = 'com.eventbase.productsingle'
         desired_caps['appActivity'] = 'com.xomodigital.azimov.Loader'
 

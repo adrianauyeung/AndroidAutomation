@@ -35,13 +35,14 @@ class MenuItemsCheck(unittest.TestCase):
 
         menuitems = self.driver.find_elements_by_id("com.eventbase.productsingle:id/row_menudrawer_tab_name")
         for item in menuitems:
-            menuname = item.text
-            item.click()
-            title = self.driver.find_element_by_id("com.eventbase.productsingle:id/action_bar").\
-                find_element_by_class_name("android.widget.TextView")
-            self.assertEqual(menuname, title.text)
-            openmenu = self.driver.find_element_by_name("Open")
-            openmenu.click()
+            if item.text != "Diagnostics":
+                menuname = item.text
+                item.click()
+                title = self.driver.find_element_by_id("com.eventbase.productsingle:id/action_bar").\
+                    find_element_by_class_name("android.widget.TextView")
+                self.assertEqual(menuname, title.text)
+                openmenu = self.driver.find_element_by_name("Open")
+                openmenu.click()
 
     def tearDown(self):
         self.driver.quit()
